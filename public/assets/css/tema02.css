@@ -6,6 +6,7 @@
 }
 .tema02.bg > div {
   bottom: 0;
+  background-repeat: repeat-x;
 }
 .tema02.bg .foreground {
   position: absolute;
@@ -15,7 +16,6 @@
   max-height: unset;
   background-color: #052c46;
   background-size: contain;
-  background-repeat-y: no-repeat;
   animation: moveBg2 60s infinite linear;
   background-position: bottom;
   background-image: url(../imgs/theme02/far-buildings.png);
@@ -26,7 +26,6 @@
   width: 100%;
   height: 100%;
   background-size: contain;
-  background-repeat-y: no-repeat;
   background-position: bottom;
   animation: moveBg3 40s infinite linear;
   background-image: url(../imgs/theme02/back-buildings.png);
@@ -39,7 +38,6 @@
   max-height: 50%;
   position: absolute;
   background-position: center;
-  background-repeat-y: no-repeat;
   bottom: 0;
   background-size: contain;
   background-position: bottom;

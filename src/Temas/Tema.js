@@ -48,18 +48,21 @@ function Tema() {
       document
         .getElementById("temaCss")
         .setAttribute("href", `./assets/css/tema0${tema}.css`);
+        document.querySelector('meta[name="theme-color"]').setAttribute("content", '#19281f');
       return Tema01();
     // caso seja o tema 02
     case 2:
       document
         .getElementById("temaCss")
         .setAttribute("href", `./assets/css/tema0${tema}.css`);
+        document.querySelector('meta[name="theme-color"]').setAttribute("content", '#052c46');
       return Tema02();
     // caso seja o tema 03
     case 3:
       document
         .getElementById("temaCss")
         .setAttribute("href", `./assets/css/tema0${tema}.css`);
+        document.querySelector('meta[name="theme-color"]').setAttribute("content", '#ab6a8c');
       return Tema03();
     default:
       break;
