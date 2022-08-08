@@ -37,6 +37,8 @@ body {
   font-family: 'Rajdhani', sans-serif;
   cursor: url(../imgs/Cross-Hair.png), auto;
   overflow: hidden;
+  height: 100vh;
+  width: 100vw;
 }
 .glass{
   background: #2c2e3373;
