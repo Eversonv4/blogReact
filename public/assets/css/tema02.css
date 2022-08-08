@@ -1,20 +1,13 @@
-.tema01 {
-  display: none;
-}
-.tema03 {
-  display: none;
-}
-
-.tema02 > .bg {
+.tema02.bg {
   position: absolute;
   width: 100vw;
   height: 100vh;
   z-index: -1;
 }
-.tema02 > .bg > div {
+.tema02.bg > div {
   bottom: 0;
 }
-.tema02 .bg .foreground {
+.tema02.bg .foreground {
   position: absolute;
   z-index: 0;
   width: 100%;
@@ -27,7 +20,7 @@
   background-position: bottom;
   background-image: url(../imgs/theme02/far-buildings.png);
 }
-.tema02 .bg .far-buildings {
+.tema02.bg .far-buildings {
   z-index: 1;
   position: absolute;
   width: 100%;
@@ -38,7 +31,7 @@
   animation: moveBg3 40s infinite linear;
   background-image: url(../imgs/theme02/back-buildings.png);
 }
-.tema02 .bg .back-buildings {
+.tema02.bg .back-buildings {
   z-index: 3;
   animation: moveBg 60s infinite linear;
   width: 100%;
@@ -82,19 +75,5 @@
   }
   to {
     background-position-x: -200px;
-  }
-}
-.tema02.content {
-  margin: 0 auto;
-  width: 800px;
-  height: 100%;
-  /* background-color: #181917f5; */
-  position: absolute;
-  left: 0;
-  right: 0;
-}
-@media (max-width: 800px) {
-  .tema02.content {
-    width: 90%;
   }
 }

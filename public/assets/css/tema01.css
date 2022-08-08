@@ -1,20 +1,14 @@
-.tema02 {
-  display: none;
-}
-.tema03 {
-  display: none;
-}
-.tema01 > .bg {
+.tema01.bg {
   position: absolute;
   width: 100vw;
   height: 100vh;
   z-index: -1;
 }
-.tema01 > .bg > div {
+.tema01.bg > div {
   max-height: 70vh;
   bottom: 0;
 }
-.tema01 .bg .bg {
+.tema01.bg .bg {
   position: absolute;
   z-index: 0;
   width: 100%;
@@ -27,7 +21,7 @@
   background-position: bottom;
   background-image: url(../imgs/theme01/bg.png);
 }
-.tema01 .bg .far-buildings {
+.tema01.bg .far-buildings {
   z-index: 1;
   position: absolute;
   width: 100%;
@@ -38,7 +32,7 @@
   animation: moveBg3 40s infinite linear;
   background-image: url(../imgs/theme01/far-buildings.png);
 }
-.tema01 .bg .buildings {
+.tema01.bg .buildings {
   z-index: 2;
   position: absolute;
   width: 100%;
@@ -48,7 +42,7 @@
   background-position: bottom;
   background-image: url(../imgs/theme01/buildings.png);
 }
-.tema01 .bg .skill-foreground {
+.tema01.bg .skill-foreground {
   z-index: 3;
   animation: moveBg 60s infinite linear;
   width: 100%;
@@ -92,18 +86,5 @@
   }
   to {
     background-position-x: -200px;
-  }
-}
-.tema01.content {
-  margin: 0 auto;
-  width: 800px;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  right: 0;
-}
-@media (max-width: 800px) {
-  .tema01.content {
-    width: 90%;
   }
 }

@@ -1,19 +1,14 @@
-.tema01 {
-  display: none;
-}
-.tema02 {
-  display: none;
-}
-.tema03 > .bg {
+
+.tema03.bg {
   position: absolute;
   width: 100vw;
   height: 100vh;
   z-index: -1;
 }
-.tema03 > .bg > div {
+.tema03.bg > div {
   bottom: 0;
 }
-.tema03 .bg .bg {
+.tema03.bg .bg {
   position: absolute;
   z-index: 0;
   width: 100%;
@@ -27,11 +22,11 @@
   background-image: url(../imgs/theme03/bg.png);
 }
 @media (max-width:1000px){
-  .tema03 .bg .bg {
+  .tema03.bg .bg {
     background-size: 130%;
   }
 }
-.tema03 .bg .montain-far {
+.tema03.bg .montain-far {
   z-index: 2;
   animation: moveBg 60s infinite linear;
   width: 100%;
@@ -46,7 +41,7 @@
   background-position: bottom;
   background-image: url(../imgs/theme03/montain-far.png);
 }
-.tema03 .bg .montains {
+.tema03.bg .montains {
   z-index: 3;
   animation: moveBg 70s infinite linear;
   width: 100%;
@@ -60,7 +55,7 @@
   background-position: bottom;
   background-image: url(../imgs/theme03/mountains.png);
 }
-.tema03 .bg .trees {
+.tema03.bg .trees {
   z-index: 4;
   animation: moveBg 60s infinite linear;
   width: 100%;
@@ -74,7 +69,7 @@
   background-position: bottom;
   background-image: url(../imgs/theme03/trees.png);
 }
-.tema03 .bg .foreground-trees {
+.tema03.bg .foreground-trees {
   z-index: 5;
   position: absolute;
   width: 100%;
@@ -115,19 +110,5 @@
   }
   to {
     background-position-x: -200px;
-  }
-}
-.tema03.content {
-  margin: 0 auto;
-  width: 800px;
-  height: 100%;
-  /* background-color: #181917f5; */
-  position: absolute;
-  left: 0;
-  right: 0;
-}
-@media (max-width: 800px) {
-  .tema03.content {
-    width: 90%;
   }
 }

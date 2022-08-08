@@ -43,11 +43,6 @@ function Tema() {
   }
   // passando a quantidade de temas para que seja escolhido um aleatóriamente
   let tema = temaRandom(1, 3);
-  // aplicando ajuste de classNamees referente ao respectivo tema
-  let setTema = document.querySelectorAll(".tema");
-  setTema.forEach(function (t) {
-    t.classList.add(`tema0${tema}`);
-  });
   switch (tema) {
     case 1:
       document
