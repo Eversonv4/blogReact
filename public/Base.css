@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font-weight: normal;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  list-style: none;
+  line-height: 1;
+  outline: 0px;
+  background: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+@font-face {
+  font-family: "04B_03";
+  src: url("../fonts/04B_03__.TTF") format("opentype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+body {
+  font-family: 'Rajdhani', sans-serif;
+  cursor: url(../imgs/Cross-Hair.png), auto;
+  overflow: hidden;
+}
+.glass{
+  background: #2c2e3373;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgb(85 84 84 / 30%);
+}
+main.main {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 24px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0px auto;
+  padding: 40px 0;
+}
+.main aside {
+  height: fit-content;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.main aside > img{
+  margin:-50px 0 5px;
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+}
+.main aside > h1{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+.main .content {
+  grid-column: span 2;
+  padding: 20px;
+  border-radius: 15px;
+  overflow-y: scroll;
+  height: 100%;
+  overflow-x: hidden;
+  max-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.main .content > h2{
+  font-family: "04B_03";
+  color: #fff;
+  font-size: 28px;
+  line-height: 32px;
+}
+.main .content .post {
+  display: flex;
+  flex-direction: column;
+  background-color: #1d1f236e;
+  border-radius: 20px;
+}
+.main .content .post header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #cccccc59;
+}
+.main .content .post header .wrap{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.main .content .post header .wrap span{
+  color: #b9bbbe;
+  font-size: 14px;
+  position: relative;
+  padding-left: 10px;
+}
+.main .content .post header .wrap span::before{
+  position: absolute;
+  content: '#';
+  left: 0;
+}
+.main .content .post .info{
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  padding-top: 0;
+  padding: 20px;
+}
+.main .content .post .info #imgDestaque{
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  object-fit: cover;
+}
