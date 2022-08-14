@@ -6,4 +6,4 @@ Iniciando a prática no uso do ReactJS, feito para executar um novo tema de form
 
 Confira a DEMO no link abaixo:
 
-https://lucasfalb.vercel.app/
+https://blogparallax.vercel.app/
